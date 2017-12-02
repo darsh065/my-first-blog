@@ -17,3 +17,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Album(models.Model):
+    song = models.TextField()
+    singer = models.TextField()
+
+
+    def __str__(self):
+        return self.song
